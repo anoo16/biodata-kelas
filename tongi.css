@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Bagian utama */
+.deter {
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+.deter h1 {
+    font-size: 50px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+span {
+    color: #FFD0D0;
+}
+
+.deter p {
+    color: black;
+    line-height: 22px;
+}
+
+.deter a {
+    background-color: black;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    display: inline-block;
+    margin: 20px 0;
+    border-radius: 5rem;    
+    transition: background-color 0.3s ease;
+}
+
+.deter a:hover {
+    background-color: #e84393;
+    
+}
+
+/* Bagian gambar */
+.images {
+    width: 45%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape {
+    bottom: 40px;
+}
+
+.images:hover .orang {
+    left: 45%;
+}
+
+/* Media query untuk layar lebih kecil */
+@media (max-width: 768px) {
+    .deter {
+        margin-left: 5%;
+        margin-top: 10%;
+    }
+
+    .deter h1 {
+        font-size: 36px;
+    }
+
+    .deter p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .images {
+        width: 60%;
+        right: 50px;
+    }
+
+    .images img {
+        height: auto;
+        max-height: 300px; /* Batas tinggi gambar agar proporsional */
+        bottom: 20px;
+    }
+}
+
+/* Media query untuk layar sangat kecil (ponsel) */
+@media (max-width: 480px) {
+    .deter {
+        margin-left: 3%;
+        margin-top: 8%;
+    }
+
+    .deter h1 {
+        font-size: 28px;
+    }
+
+    .deter p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .deter a {
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+
+    .images {
+        width: 80%;
+        right: 20px;
+    }
+
+    .images img {
+        max-height: 200px;
+    }
+}
